@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
+      .container {
+        background-color: coral;
+        height: 1000px;
+        display: flex;
 
-        .container{
-            background-color: coral;
-            height: 1000px;
-            display: flex;
+        flex-direction: row-reverse;
 
-            flex-direction:column-reverse;
-        
+        justify-content:end ;
+      }
 
-        }
-
-        .box{
-            width: 100px;
-            height: 100px;
-            background-color: dodgerblue;
-            margin: 15px;
-        }
-
-        
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: dodgerblue;
+        margin: 15px;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <div class="box">Box1</div>
-        <div class="box">Box2</div>
-        <div class="box">Box3</div>
-        <div class="box">Box4</div>
+      <div class="box">Box1</div>
+      <div class="box">Box2</div>
+      <div class="box">Box3</div>
+      <div class="box">Box4</div>
     </div>
-
-
-  
-</body>
+  </body>
 </html>

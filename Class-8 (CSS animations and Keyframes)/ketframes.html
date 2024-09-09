@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
+      .container {
+        padding: 50px;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-name: box-animation;
+        animation-duration: 4s;
+      }
+
+      @keyframes box-animation{
+         0%{
+            background-color: red;
+         }
+
+         25%{
+            background-color: blue;
+         }
+
+         50%{
+            background-color: coral;
+         }
+
+         75%{
+            background-color: magenta;
+         }
+
+         100%{
+            background-color: yellow;
+         }
+      }
+
 
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <div>Animate!</div>
+      <div class="box">Animate!</div>
     </div>
-    
-</body>
+  </body>
 </html>

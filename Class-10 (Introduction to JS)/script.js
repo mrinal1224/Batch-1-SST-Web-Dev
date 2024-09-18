@@ -11,6 +11,9 @@ let c = true
 let d = 's'
 
 
+// console.log(typeof(a))
+
+
 const r = 3
 
  r = 5

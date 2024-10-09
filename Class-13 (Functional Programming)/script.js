@@ -1,57 +1,36 @@
 
+let MyRadius = [1, 2, 4, 5, 4];
 
-// Write three functions to calculate the 
-// area , circumferene and diameter 
-// of the circle for these Radiuses
-// Create functions to do this
-// Create new arrays to store these values
-// original array should not be mutated
+function calculateArea(radius) {
+  return 3.14 * radius * radius;
+}
 
-// You should have three respective arrays 
-// area - []
-// circumfernce - []
-// diameter = []
-let MyRadius = [1 ,2 ,4 ,5 ,4]
-function calculateArea(radiusArr){
-    let areas = []
+function calculateDiameter(radius) {
+  return 2 * radius;
+}
 
-    for(let i=0 ; i<radiusArr.length ; i++){
-        areas.push(3.14*radiusArr[i]*radiusArr[i])
-    }
-
-    return areas
+function calculateCircumference(radius) {
+  return 2 * 3.14 * radius;
 }
 
 
-let finalAreas= calculateArea(MyRadius)
-console.log(finalAreas)
+
+
+function calculateData(radiusArr, cb) {
+  let data = [];
+
+  for (let i = 0; i < radiusArr.length; i++) {
+    data.push(cb(radiusArr[i]));
+  }
+
+  return data;
+}
+
+let finalAreas = calculateData(MyRadius, calculateArea);
+let finalCircumferences = calculateData(MyRadius, calculateCircumference);
+let finalDiameters = calculateData(MyRadius, calculateDiameter);
+console.log(finalAreas);
+console.log(finalCircumferences);
+console.log(finalDiameters);
 
 // Diameters and circumference
-
-function calculateDiameter(radiusArr){
-    let diameters = []
-
-    for(let i=0 ; i<radiusArr.length ; i++){
-        diameters.push(2*radiusArr[i])
-    }
-
-    return diameters
-}
-
-let finaldiameters= calculateDiameter(MyRadius)
-console.log(finaldiameters)
-
-
-
-function calculateCircumference(radiusArr){
-    let circumferences = []
-
-    for(let i=0 ; i<radiusArr.length ; i++){
-        circumferences.push(2*radiusArr[i])
-    }
-
-    return circumferences
-}
-
-let finalCircumferences= calculateCircumference(MyRadius)
-console.log(finalCircumferences)

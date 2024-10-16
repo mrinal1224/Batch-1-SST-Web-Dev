@@ -5,31 +5,31 @@
 //  and return all the 
 //sqaure values in a new array
 
-let arr1 = [1 ,2 ,3 ,4 ,5]
+// let arr1 = [1 ,2 ,3 ,4 ,5]
 
-function calucalteSqaure(arr){
-  let newArr = []
+// function calucalteSqaure(arr){
+//   let newArr = []
 
-  for(let i=0 ; i<arr.length ; i++){
-    newArr.push(arr[i]*arr[i])
-  }
+//   for(let i=0 ; i<arr.length ; i++){
+//     newArr.push(arr[i]*arr[i])
+//   }
 
-  return newArr
-}
+//   return newArr
+// }
 
-let sqrArr = calucalteSqaure(arr1)
-console.log(sqrArr)
+// let sqrArr = calucalteSqaure(arr1)
+// console.log(sqrArr)
 
 // Imperative and Declarative
 
 // Map method - 
 
-function square(val){
- return val*val
-}
+// function square(val){
+//  return val*val
+// }
 
-let squaresFromMap = arr1.map(square)
-console.log(squaresFromMap)
+// let squaresFromMap = arr1.map(square)
+// console.log(squaresFromMap)
 
 // Exercise2
 

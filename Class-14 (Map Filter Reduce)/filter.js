@@ -29,3 +29,17 @@ function filterEven(num){
 
 let EvenNums = nums.filter(filterEven)
 console.log("From Filter method  " , EvenNums)
+
+
+// Exercise
+
+const transactions = [1000 ,7000, -2000 ,-4000 , 1500]
+// You have deposits and withdrawls , 
+// filter out all the deposits
+
+let deposits= transactions.filter(function(val){
+  return val>0
+})
+
+console.log(deposits)
+

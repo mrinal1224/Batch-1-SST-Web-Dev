@@ -19,7 +19,14 @@ console.log(total)
 let totalSum = nums.reduce(function(acc , currVal){
     acc = acc+currVal
     return acc
-}, 0)
+})
 
 console.log(totalSum)
 
+
+// Excercise
+
+// Calcutalate total amount of the Transcations
+
+
+let transactions=[1000 ,2000 ,3000 ,4000]

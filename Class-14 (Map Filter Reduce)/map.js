@@ -31,5 +31,17 @@ function square(val){
 let squaresFromMap = arr1.map(square)
 console.log(squaresFromMap)
 
+// Exercise2
+
+const transactions = [1000 ,2000 ,4000 ,7000]
+const inrToUsd = 83
+
+// Convert all these transcations in rupees to dollars
 
 
+
+let dollarsTransactions = transactions.map(function(val){
+  return (val/83).toFixed(2)
+})
+
+console.log(dollarsTransactions)
